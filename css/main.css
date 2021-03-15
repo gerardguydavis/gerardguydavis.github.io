@@ -16,7 +16,7 @@
     font-size: 1em;
     line-height: 1.4;
   }
-  
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -26,21 +26,21 @@
    *
    * Customize the background color to match your design.
    */
-  
+
   ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   ::selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   /*
    * A better looking default horizontal rule
    */
-  
+
   hr {
     display: block;
     height: 1px;
@@ -49,13 +49,13 @@
     margin: 1em 0;
     padding: 0;
   }
-  
+
   /*
    * Remove the gap between audio, canvas, iframes,
    * images, videos and the bottom of their containers:
    * https://github.com/h5bp/html5-boilerplate/issues/440
    */
-  
+
   audio,
   canvas,
   iframe,
@@ -64,21 +64,21 @@
   video {
     vertical-align: middle;
   }
-  
+
   /*
    * Remove default fieldset styles.
    */
-  
+
   fieldset {
     border: 0;
     margin: 0;
     padding: 0;
   }
-  
+
   /*
    * Allow only vertical resizing of textareas.
    */
-  
+
   textarea {
     resize: vertical;
   }
@@ -157,10 +157,10 @@ header .nav ul li:hover {
 
 main {
   margin: 70px 0 0 0;
-  -webkit-user-select: none;   
-  -moz-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none; 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 main .content-wrapper {
@@ -244,6 +244,7 @@ h5 {
 }
 
 #services article {
+  flex-basis: 100%;
   padding: 20px 0;
 }
 
@@ -318,7 +319,7 @@ border-bottom: solid 2px #fff;
 #testimonials h2 {
   width: 100%;
   text-align: center;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
 
 #testimonials .profile {
@@ -454,7 +455,7 @@ nav a {
  [hidden] {
    display: none !important;
  }
- 
+
  /*
   * Hide only visually, but have it available for screen readers:
   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -463,7 +464,7 @@ nav a {
   *    causes content to wrap 1 word per line:
   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
   */
- 
+
  .sr-only {
    border: 0;
    clip: rect(0, 0, 0, 0);
@@ -476,13 +477,13 @@ nav a {
    width: 1px;
    /* 1 */
  }
- 
+
  /*
   * Extends the .sr-only class to allow the element
   * to be focusable when navigated to via the keyboard:
   * https://www.drupal.org/node/897638
   */
- 
+
  .sr-only.focusable:active,
  .sr-only.focusable:focus {
    clip: auto;
@@ -493,15 +494,15 @@ nav a {
    white-space: inherit;
    width: auto;
  }
- 
+
  /*
   * Hide visually and from screen readers, but maintain layout
   */
- 
+
  .invisible {
    visibility: hidden;
  }
- 
+
  /*
   * Clearfix: contain floats
   *
@@ -513,29 +514,29 @@ nav a {
   * 2. The use of `table` rather than `block` is only necessary if using
   *    `:before` to contain the top-margins of child elements.
   */
- 
+
  .clearfix::before,
  .clearfix::after {
    content: " ";
    display: table;
  }
- 
+
  .clearfix::after {
    clear: both;
  }
- 
+
  /* ==========================================================================
     EXAMPLE Media Queries for Responsive Design.
     These examples override the primary ('mobile first') styles.
     Modify as content requires.
     ========================================================================== */
- 
+
  @media only screen and (min-width: 768px) {
      /*------------ TABLET -----------*/
   header .nav {
     display: flex;
   }
-  
+
   #hero article {
     margin-right: 35%;
     justify-content: left;
@@ -657,7 +658,7 @@ nav a {
   #portfolio p {
     width: 600px;
   }
- 
+
  #contact .content-wrapper {
    display: flex;
    justify-content: space-evenly;
@@ -673,7 +674,7 @@ nav a {
     Inlined to avoid the additional HTTP request:
     https://www.phpied.com/delay-loading-your-print-css/
     ========================================================================== */
- 
+
  @media print {
    *,
    *::before,
@@ -684,20 +685,20 @@ nav a {
      box-shadow: none !important;
      text-shadow: none !important;
    }
- 
+
    a,
    a:visited {
      text-decoration: underline;
    }
- 
+
    a[href]::after {
      content: " (" attr(href) ")";
    }
- 
+
    abbr[title]::after {
      content: " (" attr(title) ")";
    }
- 
+
    /*
     * Don't show links that are fragment identifiers,
     * or use the `javascript:` pseudo protocol
@@ -706,17 +707,17 @@ nav a {
    a[href^="javascript:"]::after {
      content: "";
    }
- 
+
    pre {
      white-space: pre-wrap !important;
    }
- 
+
    pre,
    blockquote {
      border: 1px solid #999;
      page-break-inside: avoid;
    }
- 
+
    /*
     * Printing Tables:
     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -724,19 +725,19 @@ nav a {
    thead {
      display: table-header-group;
    }
- 
+
    tr,
    img {
      page-break-inside: avoid;
    }
- 
+
    p,
    h2,
    h3 {
      orphans: 3;
      widows: 3;
    }
- 
+
    h2,
    h3 {
      page-break-after: avoid;
