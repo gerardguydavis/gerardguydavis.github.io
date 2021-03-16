@@ -231,7 +231,7 @@ h5 {
 }
 
 #services .content-wrapper {
-  flex-basis: 200px;
+  flex-basis: 70%;
   justify-content: center;
   text-align: center;
   align-items: baseline;
@@ -280,7 +280,7 @@ border-bottom: solid 2px #fff;
 
 #portfolio .content-wrapper{
   display: flex;
-  flex-basis: 300px;
+  flex-basis: 70%;
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
