@@ -156,14 +156,6 @@ header .nav ul li:hover {
 
 /***** MAIN *****/
 
-main {
-  margin: 70px 0 0 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 main .content-wrapper {
   margin: 0 auto;
 }
@@ -174,7 +166,7 @@ main h2 {
 }
 
 #hero .content-wrapper {
-  padding: 50px 25px;
+  padding: 60px 25px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
