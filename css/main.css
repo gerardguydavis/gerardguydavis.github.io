@@ -273,13 +273,22 @@ border-bottom: solid 2px #fff;
   text-align: center;
 }
 
-#portfolio .content-wrapper{
+#portpagetitle {
+  font-size: 3em;
+}
+
+#portfolio article{
   display: flex;
   flex-basis: 70%;
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
   font-family: "Kameron", serif;
+  padding-bottom: 1em;
+}
+
+#portfolio h5 {
+  flex-basis: 100%;
 }
 
 #portfolio figure {
@@ -289,14 +298,15 @@ border-bottom: solid 2px #fff;
   flex-flow: row wrap;
   width: 100%;
   margin: 2em 0;
+  box-shadow: 2px 2px 4px #999;
 }
 
-#portfolio article {
-  padding-bottom: 1em;
+#pf-1 {
+  margin-top: -3em;
 }
 
-#portfolio .pf-1,
-#portfolio .pf-2 {
+#pf-1,
+#pf-2 {
   border-bottom: solid 1px lightgrey;
 }
 
