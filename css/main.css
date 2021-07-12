@@ -296,7 +296,7 @@ border-bottom: solid 2px #fff;
 .prevBtn,
 .nextBtn {
    position: absolute;
-   top: 50%;
+   bottom: 50%;
    width: auto;
    padding: 10px;
    background-color: #e6eef2;
@@ -322,7 +322,7 @@ border-bottom: solid 2px #fff;
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 20px 5px 0;
+  margin: 25px 5px 0;
   background-color: #17aed4;
   border-radius: 50%;
   display: inline-block;
