@@ -146,11 +146,19 @@ header .nav ul li {
   padding: 30px 15px 30px;
   box-sizing: border-box;
   transition: .2s;
+  width: 150px;
+  text-align: center;
  }
 
 header .nav ul li:hover {
   background-color: #112e52;
   transform: scale(.97);
+  transition: .2s;
+}
+
+header .nav ul li:active {
+  background-color: #112e52;
+  transform: scale(.94);
   transition: .2s;
 }
 
@@ -218,7 +226,7 @@ h5 {
   flex-flow: row wrap;
   color: #fff;
   font-family: "Kameron";
-  padding: 50px 0;
+  padding: 15px 0;
 }
 
 #services h2 {
@@ -228,28 +236,26 @@ h5 {
 }
 
 #services .content-wrapper {
-  flex-basis: 70%;
+  flex-basis: 95%;
   justify-content: center;
   text-align: center;
   align-items: baseline;
+  display: flex;
+  flex-flow: row wrap;
+  align-items:baseline;
 }
 
 #services svg {
   width: 100%;
   max-height: 150px;
-  padding-bottom: 10px;
 }
 
 #services article {
-  flex-basis: 100%;
-  padding: 20px 0;
-}
-
-.serv-1,
-.serv-2,
-.serv-3,
-.serv-4 {
-border-bottom: solid 2px #fff;
+  width: 25%;
+  padding: 5px 35px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .serv-icon path {
@@ -605,8 +611,8 @@ nav a {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    flex-basis: 200px;
-    padding: 0 50px 30px;
+    flex-basis: 150px;
+    padding: 0 25px 30px;
   }
 
   .serv-1,
@@ -634,10 +640,6 @@ nav a {
     flex-basis: 600px;
     justify-content: center;
     padding: 0 20px;
-  }
-
-  #portfolio h5 {
-    margin: -.1em 0;
   }
 
   .portfolio-carousel {
@@ -677,6 +679,10 @@ nav a {
     padding: 175px 0;
   }
 
+  #services {
+    padding: 25px 0 50px;
+  }
+  
   #services .content-wrapper {
   display: flex;
   flex-basis: 1200px;
@@ -688,6 +694,10 @@ nav a {
     padding-bottom: 0px;
   }
 
+  #portfolio {
+    padding: 25px 0 50px;
+  }
+
   #portfolio .content-wrapper {
     display: flex;
     flex-basis: 1200px;
@@ -696,7 +706,7 @@ nav a {
   }
 
   #portfolio h2 {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   #portfolio article {
