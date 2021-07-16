@@ -673,7 +673,7 @@ nav a {
   }
 
   #services h2 {
-    padding-bottom: 0;
+    padding: 10px 0 0;
   }
 
   #services .content-wrapper {
