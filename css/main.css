@@ -269,17 +269,14 @@ h5 {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  padding:50px 0;
+  padding: 15px 0 30px;
   background-color: #e6eef2;
 }
-
-/*#portfolio img {
-  width: 100%;
-}*/
 
 #portfolio h2 {
   width: 100%;
   text-align: center;
+  padding: 0 0 15px;
 }
 
 /***** PORTFOLIO CAROUSEL *****/
@@ -703,16 +700,12 @@ nav a {
     align-items: flex-start;
   }
 
-  #portfolio h2 {
-    margin-bottom: 80px;
+  #portfolio {
+    padding: 25px 0 50px;
   }
 
-  #portfolio article {
-    display: flex;
-    flex-flow: row wrap;
-    flex-basis: 600px;
-    justify-content: center;
-    padding: 0 20px;
+  #portfolio h2 {
+    padding-bottom: 25px;
   }
 
   .portfolio-carousel {
@@ -816,32 +809,11 @@ nav a {
     padding-bottom: 0px;
   }
 
-  #portfolio {
-    padding: 25px 0 50px;
-  }
-
   #portfolio .content-wrapper {
     display: flex;
     flex-basis: 1200px;
     flex-flow: row wrap;
     justify-content: center;
-  }
-
-  #portfolio h2 {
-    margin-bottom: 50px;
-  }
-
-  #portfolio article {
-    display: flex;
-    flex-flow: row wrap;
-    flex-basis: 800px;
-    justify-content: center;
-    padding: 0 30px;
-  }
-
-  #portfolio h5,
-  #portfolio p {
-    width: 600px;
   }
 
   .portfolio-carousel {
