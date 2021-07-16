@@ -227,13 +227,13 @@ h5 {
   flex-flow: row wrap;
   color: #fff;
   font-family: "Kameron";
-  padding: 15px 0;
+  padding: 15px 0 30px;
 }
 
 #services h2 {
   width: 100%;
   text-align: center;
-  margin-bottom: 50px;
+  padding-bottom: 15px
 }
 
 #services .content-wrapper {
@@ -671,8 +671,10 @@ nav a {
     display: flex;
     flex-basis: 700px;
     flex-flow: row wrap;
+    padding: 25px 0 50px
   }
 
+ 
   #services h5 {
     margin-bottom: 0px;
   }
@@ -792,11 +794,7 @@ nav a {
 
   #hero .content-wrapper {
     padding: 175px 0;
-  }
-
-  #services {
-    padding: 25px 0 50px;
-  }
+  } 
   
   #services .content-wrapper {
   display: flex;
