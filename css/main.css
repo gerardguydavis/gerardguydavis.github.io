@@ -122,6 +122,7 @@ header h1 {
   font-weight:700;
   color: #fff;
   line-height: .85em;
+  font-size: 1.75em;
 }
 
 header .nav {
@@ -500,6 +501,20 @@ nav a {
   background-color: #e6eef2;
 }
 
+#portfolio-page a {
+  text-decoration: none;
+  color: #222;
+}
+
+#portfolio-page a:hover h3 {
+  text-decoration: underline;
+}
+
+#portfolio-page a:hover article {
+  background-color: #e0ecff;
+  transition: .3s;
+}
+
 #portfolio-page .content-wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -535,7 +550,7 @@ nav a {
   flex-basis: 100%;
 }
 
-.portfolio-article p {
+.portfolio-text {
   flex-basis: 300px;
 }
 
@@ -547,6 +562,7 @@ nav a {
 
 .portfolio-screenshot img {
   width: 100%;
+  border-radius: 5px;
 }
 
 
@@ -727,6 +743,55 @@ nav a {
    align-items: center;
    flex-flow: row;
  }
+
+ /****PORTFOLIO PAGE****/
+
+#portfolio-page .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+#pf-2,
+#pf-4 {
+  flex-flow: row-reverse wrap;
+}
+
+#portfolio-page h2{
+  margin: 40px 0 20px;
+  font-size: 2em;
+}
+
+.portfolio-article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 25px 0 25px;
+  align-items: center;
+}
+
+.portfolio-article h3{
+  font-family: 'Syne';
+  text-align: center;
+  margin: 5px 0;
+  flex-basis: 45%;
+}
+
+.portfolio-text {
+  flex-basis: 40%;
+}
+
+.portfolio-screenshot {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 40%;
+}
+
+.portfolio-screenshot img {
+  width: 100%;
+}
+
  }
 
  @media only screen and (min-width: 1200px) {
@@ -789,7 +854,20 @@ nav a {
    width: 1000px;
  }
 
+#portfolio-page a {
+    flex-basis: 100%;
+}
 
+#portfolio-page h3 {
+  text-align: left;
+}
+
+#pf-2,
+#pf-4,
+#pf-2 h3,
+#pf-4 h3 {
+  text-align: right;
+}
  }
 
 
