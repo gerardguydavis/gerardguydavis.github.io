@@ -491,6 +491,59 @@ nav a {
   transition: .2s;
 }
 
+/****PORTFOLIO PAGE****/
+#portfolio-page {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-family: "Kameron";
+  background-color: #e6eef2;
+}
+
+#portfolio-page .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+.portfolio-article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border-bottom: solid 2px #fff;
+}
+
+#pf-2,
+#pf-4 {
+  background-color: #f0f0f0;
+}
+
+#pf-4 {
+  border-bottom: none;
+}
+
+.portfolio-article h3{
+  font-family: 'Syne';
+  text-align: center;
+  margin: 5px 0;
+  flex-basis: 100%;
+}
+
+.portfolio-article p {
+  padding: 0 0 25px;
+  flex-basis: 300px;
+}
+
+.portfolio-screenshot {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 95%;
+}
+
+.portfolio-screenshot img {
+  width: 100%;
+}
 
 
 /* ==========================================================================
