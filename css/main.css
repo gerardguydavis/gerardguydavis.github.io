@@ -248,7 +248,7 @@ h5 {
 
 #services svg {
   width: 100%;
-  max-height: 150px;
+  max-height: 100px;
 }
 
 #services article {
@@ -667,11 +667,15 @@ nav a {
     justify-content: left;
   }
 
+  #services h2 {
+    padding-bottom: 0;
+  }
+
   #services .content-wrapper {
     display: flex;
     flex-basis: 700px;
     flex-flow: row wrap;
-    padding: 25px 0 50px
+    padding: 25px 0 15px
   }
 
  
@@ -684,7 +688,7 @@ nav a {
     flex-flow: row wrap;
     justify-content: center;
     flex-basis: 150px;
-    padding: 0 25px 30px;
+    padding: 0 25px 10px;
   }
 
   .serv-1,
@@ -802,9 +806,13 @@ nav a {
   flex-flow: row wrap;
   }
 
+  #services svg {
+    max-height: 150px;
+  } 
+
   #services article {
     flex-basis: 275px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   #portfolio .content-wrapper {
