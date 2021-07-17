@@ -223,6 +223,7 @@ main h2 {
   color: #fff;
   font-family: "Kameron";
   padding: 15px 0;
+  align-items: center;
 }
 
 #services h2 {
@@ -271,6 +272,7 @@ main h2 {
   flex-flow: row wrap;
   padding: 15px 0 30px;
   background-color: #e6eef2;
+  align-items: center;
 }
 
 #portfolio h2 {
@@ -807,9 +809,12 @@ nav a {
   } 
   
   #services .content-wrapper {
-  display: flex;
   flex-basis: 1200px;
-  flex-flow: row wrap;
+  padding-bottom: 25px;
+  }
+
+  #services h2 {
+    padding: 0;
   }
 
   #services svg {
