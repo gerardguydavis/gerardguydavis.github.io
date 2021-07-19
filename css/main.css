@@ -691,11 +691,11 @@ nav a {
   }
   
   #services svg {
-    max-height: 125px;
+    max-height: 100px;
   }
   
   #services article {
-    flex-basis: 150px;
+    flex-basis: 125px;
     padding: 0 25px 10px;
   }
 
@@ -810,7 +810,7 @@ nav a {
   
   #services .content-wrapper {
   flex-basis: 1200px;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   }
 
   #services h2 {
@@ -822,8 +822,8 @@ nav a {
   } 
 
   #services article {
-    flex-basis: 275px;
-    padding-bottom: 0;
+    flex-basis: 225px;
+    padding-bottom: 25px;
   }
 
   #portfolio .content-wrapper {
