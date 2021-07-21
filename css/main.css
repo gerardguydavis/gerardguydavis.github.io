@@ -130,43 +130,11 @@ header .nav {
   align-items: center;
 }
 
-header .nav ul {
-  display: flex;
-  list-style-type: none;
-  font-family: 'Syne', sans-serif;
-  font-weight: bold;
-  justify-content: right;
-  text-transform: uppercase;
-  margin: 0;
-  padding:0;
-}
-
-header .nav ul li {
-  margin: 0;
-  padding: 30px 15px 30px;
-  box-sizing: border-box;
-  transition: .2s;
-  width: 150px;
-  text-align: center;
- }
-
-header .nav ul li:hover {
-  background-color: #112e52;
-  transform: scale(.97);
-  transition: .2s;
-}
-
-header .nav ul li:active {
-  background-color: #112e52;
-  transform: scale(.94);
-  transition: .2s;
-}
-
 
 /***** MAIN *****/
 
 main {
-  margin: 63px 0 0 0;
+  margin: 60px 0 0 0;
 }
 main .content-wrapper {
   margin: 0 auto;
@@ -178,33 +146,34 @@ main h2 {
 }
 
 #hero .content-wrapper {
-  padding: 60px 25px;
+  padding: 30px 25px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background: url('../img/hero.jpg') center no-repeat #333;
+  background: url('../img/creek.png') center no-repeat #333;
   background-size: cover;
-  border-bottom: solid 2px #fff;
-
 }
 
-#hero article {
-  flex-basis: 350px;
-  text-align: right;
-  background-color: rgba(145, 145, 145, .8);
+#hero-text {
+  display: flex;
+  justify-content: center;
+  flex-basis: 300px;
+  text-align: center;
   color: #fff;
-  padding: 10px 20px;
-  border: solid 3px #fff;
+  flex-flow: row wrap;
 }
 
 #hero h2 {
   font-family: 'Kameron', serif;
-  font-size: 2.175em;
+  font-size: 1.55em;
+  line-height: 1.15em;
   font-weight: 700;
-  line-height: 2.225rem;
   text-transform: none;
-  opacity: 100%;
   text-shadow: 0px 1px 3px #222;
+  background-color: rgba(5, 5, 5, .7);
+  border: solid 2px #fff;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 #hero h4 {
@@ -212,6 +181,36 @@ main h2 {
   margin-top: -1em;
   text-shadow: 0px 1px 2px #222;
 }
+
+#hero button {
+  color: #fff;
+  background-color: #004372;
+  font-family: 'Kameron', sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 3px #fff;
+  transition: .1s;
+}
+
+#hero button:hover {
+  color: #004372;
+  background-color: #fff;
+  transition: .1s;
+}
+
+#hero button:active {
+  background-color: #c9c9c9;
+}
+
+/***** ABOUT *****/
+
+#about {
+  display: none;
+}
+
 
 /***** SERVICES *****/
 #services {
@@ -223,6 +222,8 @@ main h2 {
   font-family: "Kameron";
   padding: 15px 0;
   align-items: center;
+  border-top: solid 2px #fff;
+  border-bottom: solid 2px #fff;
 }
 
 #services h2 {
@@ -673,20 +674,120 @@ nav a {
     display: flex;
   }
 
-  #hero article {
-    margin-right: 35%;
-    justify-content: left;
+  header .nav ul {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Syne', sans-serif;
+    font-weight: bold;
+    justify-content: right;
+    text-transform: uppercase;
+    margin: 0;
+    padding:0;
+    
+  }
+  
+  header .nav ul li {
+    margin: 0;
+    padding: 30px 15px 30px;
+    box-sizing: border-box;
+    transition: .2s;
+    width: 150px;
+    text-align: center;
+    width: 125px;
+    font-size: .9em;
+   }
+  
+  header .nav ul li:hover {
+    background-color: #112e52;
+    transform: scale(.97);
+    transition: .2s;
+  }
+  
+  header .nav ul li:active {
+    background-color: #112e52;
+    transform: scale(.94);
+    transition: .2s;
   }
 
-  #services h2 {
-    padding: 10px 0 0;
+  #hero .content-wrapper {
+    padding: 60px 0;
+  }
+
+  #hero-text {
+    flex-basis: 650px;
+  }
+
+  #hero h2 {
+    font-family: 'Kameron', serif;
+    font-size: 2.175em;
+    font-weight: 700;
+    line-height: 2.225rem;
+    text-transform: none;
+    text-shadow: 0px 1px 3px #222;
+    background-color: rgba(5, 5, 5, .7);
+    border: solid 2px #fff;
+    padding: 20px;
+  }
+
+  #about {
+    background-color: #e6eef2;
+    display: block;
+    border-top: solid 2px #fff;
+    padding: 25px 0;
+  }
+  
+  #about .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 600px;
+  }
+  
+  #about h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 0 0 25px;
+  }
+  
+  #about p {
+    font-family: 'Kameron', serif;
+    margin: 0;
+  }
+  
+  #about figure {
+    float: left;
+    width: 125px;
+    margin: 0 20px 0 0;
+  }
+  
+  #about figure img {
+    width: 100%;
+    border-radius: 50%;
+    border: solid 3px #fff;
+  }
+
+  #about span {
+    text-decoration: underline;
+  }
+
+  .eastercat {
+    display: none;
+    width: 400px;
+    border-radius: 8px;
+    border: solid 3px #fff;
+    position: absolute;
+  }
+
+  #about span:hover .eastercat,
+  #about span:active .eastercat {
+    display: block;
   }
 
   #services .content-wrapper {
     display: flex;
     flex-basis: 700px;
     flex-flow: row wrap;
-    padding: 25px 0 15px
+    padding: 15px 0;
   }
 
   #services h5 {
@@ -695,7 +796,7 @@ nav a {
   }
   
   #services svg {
-    max-height: 100px;
+    max-height: 75px;
   }
   
   #services article {
@@ -808,10 +909,54 @@ nav a {
  @media only screen and (min-width: 1200px) {
      /**** DESKTOP ****/
 
+  header .nav ul li {
+    width: 150px;
+    font-size: 1em;
+    }
+
   #hero .content-wrapper {
     padding: 175px 0;
   } 
-  
+
+  #hero-text {
+    flex-basis: 800px;
+  }
+
+  #hero-text h2 {
+    padding: 25px;
+  }
+
+  #hero button {
+    display: flex;
+    flex-basis: 200px;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+
+  #about .content-wrapper {
+    width: 1000px;
+    padding: 25px 0;
+  }
+
+  #about #bio {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #about h2 {
+    margin: 0 0 25px;
+    padding: 0;
+  }
+
+  #bio figure {
+    flex-basis: 200px;
+  }
+
+  #bio p {
+    flex-basis: 700px;
+  }
+
   #services .content-wrapper {
   flex-basis: 1200px;
   padding-bottom: 0px;
@@ -822,7 +967,7 @@ nav a {
   }
 
   #services svg {
-    max-height: 150px;
+    max-height: 80px;
   } 
 
   #services article {
