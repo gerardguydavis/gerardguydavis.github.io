@@ -398,7 +398,6 @@ input[type=submit]:active {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  padding: 15px 0 30px;
   background-color: #e6eef2;
   align-items: center;
 }
@@ -994,11 +993,7 @@ nav a {
     padding: 0 25px 10px;
   }
 
-   #portfolio .content-wrapper {
-    display: flex;
-    flex-basis: 750px;
-    flex-flow: row wrap;
-    justify-content: center;
+  .portfolio-wrapper {
     padding: 25px 0;
   }
 
@@ -1010,10 +1005,10 @@ nav a {
     max-width: 700px;
   }
 
-  #testimonials .content-wrapper {
+  /*#testimonials .content-wrapper {
     display: flex;
     flex-basis: 600px;
-  }
+  }*/
 
   #contact .content-wrapper {
     justify-content: space-evenly;
@@ -1160,11 +1155,8 @@ nav a {
     margin-top: 20px;
   }
 
-  #portfolio .content-wrapper {
-    display: flex;
-    flex-basis: 1200px;
-    flex-flow: row wrap;
-    justify-content: center;
+  .portfolio-wrapper {
+    padding: 50px 0;
   }
 
   #portfolio h2 {
