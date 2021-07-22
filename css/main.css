@@ -95,7 +95,7 @@ body{
 
 header {
   display: flex;
-  z-index: 1000;
+  z-index: 10;
   position: absolute;
 }
 
@@ -203,6 +203,140 @@ main h2 {
 
 #hero button:active {
   background-color: #c9c9c9;
+}
+
+.hide {
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+  background-color: #e6eef2;
+  border: solid 3px #004372;
+  border-radius: 10px;
+  z-index: 20;
+  padding: 50px;
+  width: 600px;
+  font-family: 'syne', sans-serif;
+}
+
+.popup-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.popup h2 {
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.popup p {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.popup a {
+  color: #222;
+}
+
+.popup h5 {
+  margin: 15px 0 0;
+  font-size: 1em;
+}
+
+.popup-form {
+  display: flex;
+  flex-basis: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.popup-contact {
+  flex-basis: 50%;
+  justify-content: space-around;
+}
+
+.popup-message h5{
+  width: 100%;
+}
+
+.popup-message {
+  flex-basis: inherit;
+}
+
+input[name=name],
+input[name=email] {
+  width: 95%;
+}
+
+input,
+textarea {
+  font-family: 'Kameron', serif;
+}
+
+textarea {
+  height: 300px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+input[type=submit] {
+  width: 200px;
+  padding: 15px 0;
+  color: #fff;
+  background-color: #004372;
+  font-family: 'syne', sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  border: solid 3px #fff;
+  transition: .1s;
+  text-transform: uppercase;
+}
+
+
+input[type=submit]:hover {
+  color: #004372;
+  background-color: #fff;
+  transition: .1s;
+  cursor: pointer;
+}
+
+input[type=submit]:active {
+  background-color: #c9c9c9;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px;
+  margin: 3px;
+  font-family: 'syne', sans-serif;
+  font-size: 1.5em;
+  border-radius: 5px;
+  transition: .1s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.close:hover {
+  background-color: #333;
+  color: #fff;
+  transition: .1s;
+  cursor: pointer;
+}
+
+.close:active {
+  background-color: #555;
+  color: #fff;
 }
 
 /***** ABOUT *****/
@@ -449,19 +583,22 @@ main h2 {
   font-weight: bold;
 }
 
-#contact a {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Kameron";
-}
-
 .email {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .email h6 {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Kameron";
   font-size: 1.25rem;
 }
 
@@ -489,6 +626,7 @@ nav a {
 
 .email:hover {
   transform: scale(1.07);
+  cursor: pointer;
 }
 
 
@@ -847,7 +985,7 @@ nav a {
    #contact .email {
    align-items: center;
    justify-content: center;
-   flex-basis: 90%;
+   flex-basis: 40%;
    transition: .3s;
  }
 
