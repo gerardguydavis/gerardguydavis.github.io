@@ -306,7 +306,10 @@ input[type=submit]:active {
   position: absolute;
   top: 0;
   right: 0;
+  width: 20px;
+  font-size: 20px;
   padding: 3px;
+  text-align: center;
   margin: 3px;
   font-family: 'syne', sans-serif;
   font-size: 1.5em;
@@ -955,7 +958,7 @@ nav a {
     border: solid 3px #fff;
   }
 
-  #about span {
+  #about a {
     text-decoration: underline;
   }
 
@@ -967,8 +970,8 @@ nav a {
     position: absolute;
   }
 
-  #about span:hover .eastercat,
-  #about span:active .eastercat {
+  #about a:hover .eastercat,
+  #about a:active .eastercat {
     display: block;
   }
 
