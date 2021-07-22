@@ -1,4 +1,6 @@
 <?php
+//From freecontactform.com
+
 if (isset($_POST['email'])) {
 
     $email_to = "gerard@gerarddavis.com";
