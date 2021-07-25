@@ -1179,13 +1179,25 @@ nav a {
  #contact .email {
    flex-basis: 40%;
  }
+ 
 
 #portfolio-page a {
-    flex-basis: 100%;
+    flex-basis: 75%;
+}
+
+#portpagetitle {
+  flex-basis: 100%;
+  justify-content: center;
+  text-align: center;
+  padding-top: 25px;
 }
 
 #portfolio-page h3 {
   text-align: left;
+}
+
+#pf-2 p {
+  justify-content: flex-end;
 }
 
 #pf-2,

@@ -27,6 +27,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Kameron:wght@400;700&display=swap" rel="stylesheet">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LYTNLN9XLH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LYTNLN9XLH');
+</script>
 </head>
 
 <body>
@@ -198,17 +207,24 @@
             <img src="img/floorfiller.png" alt="FloorFiller project">
             </a>
           </div>
-          <div class="portfolio-slide fade" id="port2">
+          <div class="portfolio-carousel">
+            <div class="portfolio-slide fade" id="port2">
+              <a href="https://gerarddavis.com/portfolio/tetris-the-cat" target="_blank">
+              <img src="img/tetris-site.png" alt="Tetris the Cat">
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-slide fade" id="port3">
             <a href="https://gerarddavis.com/portfolio/github-repo-gallery" target="_blank">
               <img src="img/github-repo.png" alt="Github repo gallery">
             </a>
           </div>
-            <div class="portfolio-slide fade" id="port3">
+            <div class="portfolio-slide fade" id="port4">
               <a href="https://gerarddavis.com/portfolio/moondog" target="_blank">
                 <img src="img/moondog.png" alt="Moondog website">
               </a>
             </div>
-            <div class="portfolio-slide fade" id="port4">
+            <div class="portfolio-slide fade" id="port5">
               <a href="https://gerarddavis.com/portfolio/guess-the-word" target="_blank">
                 <img src="img/guess-the-word.png" alt="Guess The Word game">
               </a>
@@ -216,15 +232,16 @@
             <a class="prevBtn">❮</a>
             <a class="nextBtn">❯</a>
         </div>
+
         <div class="navdots">
         <span class="navdot" onclick="currentSlide(1)"></span>
         <span class="navdot" onclick="currentSlide(2)"></span>
         <span class="navdot" onclick="currentSlide(3)"></span>
         <span class="navdot" onclick="currentSlide(4)"></span>
+        <span class="navdot" onclick="currentSlide(5)"></span>
       </div>
       </div>
     </section>
-    <script src="js/carousel.js" defer></script>
 
   <section id="contact">
     <div class="content-wrapper">
@@ -253,13 +270,8 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/carousel.js" defer></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
