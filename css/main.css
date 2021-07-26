@@ -1054,9 +1054,6 @@ nav a {
 }
 
 .portfolio-article {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   padding: 25px 0 25px;
   align-items: center;
 }
@@ -1182,7 +1179,7 @@ nav a {
  
 
 #portfolio-page a {
-    flex-basis: 75%;
+    flex-basis: 100%;
 }
 
 #portpagetitle {
@@ -1192,12 +1189,19 @@ nav a {
   padding-top: 25px;
 }
 
-#portfolio-page h3 {
-  text-align: left;
+.portfolio-text {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 600px;
 }
 
-#pf-2 p {
-  justify-content: flex-end;
+#portfolio-page h3 {
+  text-align: left;
+  flex-basis: 100%;
+}
+
+#portfolio-page p {
+  flex-basis: 100%;
 }
 
 #pf-2,
@@ -1205,7 +1209,8 @@ nav a {
 #pf-2 h3,
 #pf-4 h3 {
   text-align: right;
-}
+  }
+
  }
 
 
