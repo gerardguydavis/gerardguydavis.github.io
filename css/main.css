@@ -681,12 +681,11 @@ nav a {
   font-family: "syne", sans-serif;
 }
 
-#pf-2,
-#pf-4 {
+.pf-alt {
   background-color: #f0f0f0;
 }
 
-#pf-4 {
+#pf-6 {
   border-bottom: none;
 }
 
@@ -698,7 +697,7 @@ nav a {
 }
 
 .portfolio-text {
-  flex-basis: 300px;
+  flex-basis: 90%;
 }
 
 .portfolio-screenshot {
@@ -1047,8 +1046,7 @@ nav a {
   justify-content: center;
 }
 
-#pf-2,
-#pf-4 {
+.pf-alt {
   flex-flow: row-reverse wrap;
 }
 
@@ -1064,13 +1062,9 @@ nav a {
 
 .portfolio-article h3{
   font-family: 'Syne';
-  text-align: center;
   margin: 5px 0;
-  flex-basis: 45%;
-}
-
-.portfolio-text {
-  flex-basis: 40%;
+  text-align: left;
+  flex-basis: 100%;
 }
 
 .portfolio-screenshot {
@@ -1082,6 +1076,22 @@ nav a {
 .portfolio-screenshot img {
   width: 100%;
 }
+
+.portfolio-text {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 40%;
+}
+
+#portfolio-page p {
+  flex-basis: 100%;
+}
+
+.pf-alt,
+.pf-alt h3 {
+  text-align: right;
+  }
+
 
  }
 
@@ -1190,30 +1200,12 @@ nav a {
   flex-basis: 100%;
   justify-content: center;
   text-align: center;
-  padding-top: 25px;
+  padding: 15px 0;
 }
 
 .portfolio-text {
-  display: flex;
-  flex-flow: row wrap;
   flex-basis: 600px;
 }
-
-#portfolio-page h3 {
-  text-align: left;
-  flex-basis: 100%;
-}
-
-#portfolio-page p {
-  flex-basis: 100%;
-}
-
-#pf-2,
-#pf-4,
-#pf-2 h3,
-#pf-4 h3 {
-  text-align: right;
-  }
 
  }
 
